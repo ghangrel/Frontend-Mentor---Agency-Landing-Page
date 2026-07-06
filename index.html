@@ -31,7 +31,10 @@
    <main>
     <section class="grid">
     <div class="image-container">
-        <img class="image" src="img/mobile/image-transform.jpg" alt="">
+        <picture>
+            <source media="(min-width: 48px)" srcset="img/desktop/image-transform.jpg">
+            <img class="image" src="img/mobile/image-transform.jpg" alt="">
+        </picture>
     </div>
 
     <div class="text-container">
@@ -43,12 +46,15 @@
     </div>
 
     <div class="image-container">
-        <img class="image" src="img/mobile/image-stand-out.jpg" alt="">
+        <picture>
+            <source media="(min-width: 48px)" srcset="img/desktop/image-stand-out.jpg">
+        <img class="image" src="img/mobile/image-stand-out.jpg" alt="img/desktop/image-stand-out.jpg">
+        </picture>
     </div>
 
     <div class="text-container">
        <h2>Stand out to the right audience</h2>
-       <p>  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p> 
+       <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p> 
        <a href="#" class="learn-more orange">LEARN MORE</a>
     </div>
 
@@ -92,10 +98,23 @@
     </section>
 
     <section class="gallerie">
-        <img src="img/mobile/image-gallery-milkbottles.jpg" alt="">
-        <img src="img/mobile/image-gallery-orange.jpg" alt="">
-        <img src="img/mobile/image-gallery-cone.jpg" alt="">
-        <img src="img/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        
+        <picture>
+            <source media="(min-width: 48rem)" srcset="img/desktop/image-gallery-milkbottles.jpg">
+            <img src="img/mobile/image-gallery-milkbottles.jpg" alt="">
+        </picture>
+        <picture>
+            <source media="(min-width: 48rem)" srcset="img/desktop/image-gallery-orange.jpg">
+            <img src="img/mobile/image-gallery-orange.jpg" alt="">
+        </picture>
+        <picture>
+            <source media="(48rem)" srcset="img/desktop/image-gallery-cone.jpg">
+            <img src="img/mobile/image-gallery-cone.jpg" alt="">
+        </picture>
+        <picture>
+            <source media="(min-width: 48rem)" srcset="img/desktop/image-gallery-sugarcubes.jpg">
+            <img src="img/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        </picture>
     </section>
 
    </main>

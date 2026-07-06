@@ -111,11 +111,9 @@ h1 {
     right: 0;
     width: 0;
     height: 0;
-
     border-width: 0 0 24px 24px;
     border-style: solid;
     border-color: transparent transparent var(--White) transparent;
-
 }
 
 .logo-header {
@@ -350,4 +348,40 @@ footer {
 
 .hidden {
     display: none;
+}
+
+@media (min-width: 48rem) {
+
+   
+    /*Ancho general*/
+    header, main, footer {
+        max-width: 1440px;
+    }
+
+    /*alto encabezado y cambio de tamaños internos */
+    header {
+        min-height: 85vh;
+        padding: 1rem;
+    }
+
+    .logo-header {
+        height: 2rem;
+    }
+
+    h1 {
+        font-size: 3.75rem;
+        margin-block-start: 5rem;
+    }
+
+    /*sección grid*/
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image {
+        width: 100%;
+        max-width: 100%;
+    }
+
 }
